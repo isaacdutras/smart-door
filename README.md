@@ -16,7 +16,7 @@ Desenvolver um dispositivo embarcado capaz de monitorar a abertura de uma porta 
   - Porta: `1883`  
 - **PCB personalizada**: obrigatória para montagem do dispositivo final
 
-## ✅ Requisitos Funcionais
+## ⚙️ Requisitos Funcionais
 
 ### 1. Leitura do sensor BH1750-FVI
 
@@ -81,4 +81,4 @@ Desenvolver um dispositivo embarcado capaz de monitorar a abertura de uma porta 
 
 ---
 
-> Este projeto faz parte do Módulo 4 do Curso de Capacitação em Sistemas Embarcados com o iMCP HTNB32L, promovido pela Hana Embedded.
+> Este projeto faz parte do Módulo 4 do Curso de Capacitação em Sistemas Embarcados com o iMCP HTNB32L.
