@@ -41,7 +41,9 @@
         "bsp.h": "c",
         "debug_log.h": "c",
         "ht_bsp_custom.h": "c",
-        "flash_qcx212_rt.h": "c"
+        "flash_qcx212_rt.h": "c",
+        "gpio_api.h": "c",
+        "ostask.h": "c"
     },
     "python.autoComplete.extraPaths": [
         "${workspaceFolder}/sources/poky/bitbake/lib",
