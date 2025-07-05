@@ -15,15 +15,12 @@
 
 extern USART_HandleTypeDef huart1;
 
-static void luck(void *arg)
+static void readSwitch(void *arg)
 {
-    bool ledState = false;
     while (1)
     {
-      printf("Hello World\n");
-      GPIO_PinWrite(LED_INSTANCE, 1 << LED_PIN, (ledState ? 1 << LED_PIN : 0));
-      ledState = !ledState;
-      vTaskDelay(pdMS_TO_TICKS(1000));
+      bool switchState = GPIO_PinRead(SWITCH_INSTANCE, SWITCH_PIN);
+      GPIO_PinWrite(LED_INSTANCE, 1 << LED_PIN, (switchState ? 1 << LED_PIN : 0));
     }
 }
 
@@ -38,7 +35,7 @@ static void appInit(void *arg)
     
     HAL_USART_InitPrint(&huart1, GPR_UART1ClkSel_26M, uart_cntrl, 115200);
 
-    xTaskCreate(luck, "Luck", 124, NULL, 2, NULL);
+    xTaskCreate(readSwitch, "RedSwitch", 124, NULL, 1, NULL);
 
     return;
 }
