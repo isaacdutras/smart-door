@@ -23,6 +23,7 @@
 #pragma once
 
 #include "htnb32lxxx_hal_usart.h"
+#include "HT_Peripheral_Config.h"
 #include "bsp.h"
 #include "HT_BSP_Custom.h"
 #include "osasys.h"
