@@ -29,9 +29,11 @@ CFLAGS_INC        +=  -I Inc
 
 obj-y             += Src/main.o \
                      Src/HT_BSP_Custom.o\
-                     Src/HT_Peripheral_Config.o\
+                     Src/HT_GPIO_Api.o\
                      Src/bh1750fvi.o\
-                     Src/bh1750fvi_low_level.o
+                     Src/bh1750fvi_low_level.o\
+                     Src/HT_MQTT_Api.o \
+                     Src/HT_Fsm.o
 
 include $(TOP)/SDK/PLAT/tools/scripts/Makefile.rules
 

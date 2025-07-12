@@ -24,6 +24,9 @@
 
 #include "htnb32lxxx_hal_usart.h"
 #include "HT_Peripheral_Config.h"
+#include "HT_MQTT_Api.h"
+#include "HT_GPIO_Api.h"
+#include "HT_Fsm.h"
 #include "bsp.h"
 #include "HT_BSP_Custom.h"
 #include "osasys.h"
@@ -50,4 +53,3 @@
 #include "netmgr.h"
 #include <stdio.h>
 #include "cmsis_os2.h"
-

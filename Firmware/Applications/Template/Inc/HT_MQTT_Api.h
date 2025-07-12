@@ -42,9 +42,19 @@
 #include "MQTTClient.h"
 #include "uart_qcx212.h"
 
-#define MQTT_TLS_ENABLE 1
+#define MQTT_TLS_ENABLE 0
 
 #define MQTT_GENERAL_TIMEOUT 60000
+
+#define INIT_TASK_STACK_SIZE    (1024*6)
+
+#define QMSG_ID_BASE               (0x160) 
+#define QMSG_ID_NW_IPV4_READY      (QMSG_ID_BASE)
+#define QMSG_ID_NW_IPV6_READY      (QMSG_ID_BASE + 1)
+#define QMSG_ID_NW_IPV4_6_READY    (QMSG_ID_BASE + 2)
+#define QMSG_ID_NW_DISCONNECT      (QMSG_ID_BASE + 3)
+
+#define APP_EVENT_QUEUE_SIZE    (10)
 
 /* Functions ------------------------------------------------------------------*/
 

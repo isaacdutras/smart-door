@@ -305,37 +305,4 @@ ________________________________________________________________________________
 
 #define FLASH_BARE_RW_MODE 1
 
-/*
-PINS DIVISIONS:
-BH1750 -> GPIO4 & GPIO5
-LED -> GPIO 6
-BUZZER -> GPIO 3
-RED SWITCH -> GPIO10
-*/
-typedef enum {
-    DEVICE_LED,
-    DEVICE_SWITCH,
-    DEVICE_BUZZER,
-    DEVICE_BH1750
-} GpioDevice_t;
-
-//LED INDICATOR
-#define LED_INSTANCE 0
-#define LED_PIN 5
-#define LED_PAD_ID 16
-#define LED_PAD_ALT_FUNC         PAD_MuxAlt0    
-#define LED_MASK (uint32_t)(1 << LED_PIN)
-
-//RED SWITCH
-#define SWITCH_INSTANCE 0
-#define SWITCH_PIN 10
-#define SWITCH_PAD_ID 25
-#define SWITCH_PAD_ALT_FUNC      PAD_MuxAlt0                                    
-#define SWITCH_MASk (uint32_t)(1 << SWITCH_PIN)
-
-void GPIO_deviceInit(GpioDevice_t);
-
-
-#endif  /* __HT_PERIPHERAL_CONFIG_H__ */
-
-/************************ HT Micron Semicondutores S.A *****END OF FILE****/
+#endif

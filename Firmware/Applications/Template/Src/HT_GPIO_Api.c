@@ -1,4 +1,4 @@
-#include "HT_Peripheral_Config.h"
+#include "HT_GPIO_Api.h"
 #include "HT_gpio_qcx212.h"
 
 void GPIO_deviceInit(GpioDevice_t device){
